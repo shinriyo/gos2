@@ -34,3 +34,4 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
   * Docs: https://hexdocs.pm/phoenix
   * Mailing list: http://groups.google.com/group/phoenix-talk
   * Source: https://github.com/phoenixframework/phoenix
+  * Phoenix v1.1.2 and React.js https://medium.com/@diamondgfx/phoenix-v1-1-2-and-react-js-3dbd195a880a#.qxpskp4hz
