@@ -17,6 +17,10 @@ To start your Phoenix app:
   * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
   postgres -D /usr/local/var/postgres
 
+  * Create role
+  psql postgres
+  `create role postgres createdb replication superuser createrole login`
+
   * Install Node.js dependencies with `npm install`
 
   ref: http://parashuto.com/rriver/tools/updating-node-js-and-npm
