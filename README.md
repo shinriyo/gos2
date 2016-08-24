@@ -25,6 +25,9 @@ To start your Phoenix app:
 
   ref: http://parashuto.com/rriver/tools/updating-node-js-and-npm
 
+  * Manually build `node node_modules/brunch/bin/brunch build`
+  ref: http://www.phoenixframework.org/docs/static-assets
+
   * Start Phoenix endpoint with `mix phoenix.server`
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
