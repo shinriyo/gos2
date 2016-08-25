@@ -15,6 +15,7 @@ class Blog extends React.Component {
     request
       .get('/api/posts')
       .set('Accept', 'application/json')
+      .set('Content-type', 'application/json')
       .end((err, res) => {
         this.setState({data: res.body.data.reverse()});
       });
@@ -26,6 +27,7 @@ class Blog extends React.Component {
     request
       .post('/api/posts')
       .set('Accept', 'application/json')
+      .set('Content-type', 'application/json')
       .send(JSON.stringify({post: post}))
       .end((err, res) => {
         this.setState({data: [res.body.data].concat(this.state.data)});
