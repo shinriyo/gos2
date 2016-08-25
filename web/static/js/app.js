@@ -21,6 +21,8 @@ class Blog extends React.Component {
   }
 
   handlePostSubmit(post) {
+    // client.js:964 POST http://localhost:4000/api/posts 400 (Bad Request)
+    // http://itdoc.hitachi.co.jp/manuals/3020/30203M0360/EM030162.HTM
     request
       .post('/api/posts')
       .set('Accept', 'application/json')
