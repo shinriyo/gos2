@@ -30,6 +30,7 @@
       </main>
 
     </div> <!-- /container -->
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/login.css") %>">
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   </body>
 </html>
