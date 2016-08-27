@@ -68,11 +68,13 @@ const Post = props => {
       </div>
       <div className='panel-body'>
         {props.data.body}
-      <div className='panel-modify'>
-        <input className='btn btn-danger pull-right' type='submit' value='Delete' />
-        <input className='btn btn-default pull-right' type='submit' value='Edit' />
-        <input className='btn btn-default pull-right' type='submit' value='Show' />
-      </div>
+        <form>
+          <div className='form-group'>
+          <input className='btn btn-danger pull-right' type='submit' value='Delete' />
+          <input className='btn btn-default pull-right' type='submit' value='Edit' />
+          <input className='btn btn-default pull-right' type='submit' value='Show' />
+        </div>
+      </form>
       </div>
     </div>
   );
