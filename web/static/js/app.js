@@ -59,7 +59,7 @@ class Blog extends React.Component {
   }
 }
 
-
+//  1つPost
 const Post = props => {
   return (
     <div className='panel panel-default'>
@@ -68,6 +68,11 @@ const Post = props => {
       </div>
       <div className='panel-body'>
         {props.data.body}
+      <div className='panel-modify'>
+        <input className='btn btn-danger pull-right' type='submit' value='Delete' />
+        <input className='btn btn-default pull-right' type='submit' value='Edit' />
+        <input className='btn btn-default pull-right' type='submit' value='Show' />
+      </div>
       </div>
     </div>
   );
@@ -107,13 +112,13 @@ class Submit extends React.Component {
         <div className='form-group'>
           <textarea className='form-control' type='text' placeholder='内容' value={this.state.body} onChange={this.handleBodyChange.bind(this)}/>
         </div>
-        <input className='btn btn-default pull-right' type='submit' value='Post' />
+        <input className='btn btn-default pull-right' type='submit' value='Submit' />
       </form>
     );
   }
 }
 
 ReactDOM.render(
-  <Blog/>,
+  <Blog />,
   document.getElementById('main')
 )
